@@ -1,0 +1,200 @@
+.
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
+
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        #map_489983e5f0735f15e6ecb999c104a075 {
+            position: relative;
+            width: 100.0%;
+            height: 100.0%;
+            left: 0.0%;
+            top: 0.0%;
+        }
+        
+        .leaflet-container {
+            font-size: 1rem;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+
+<body>
+
+
+    <div class="folium-map" id="map_489983e5f0735f15e6ecb999c104a075"></div>
+
+</body>
+<script>
+    var map_489983e5f0735f15e6ecb999c104a075 = L.map(
+        "map_489983e5f0735f15e6ecb999c104a075", {
+            center: [0, 0],
+            crs: L.CRS.EPSG3857,
+            zoom: 1,
+            zoomControl: true,
+            preferCanvas: false,
+        }
+    );
+
+
+
+
+
+    var tile_layer_993a25953d8ecf14e165fe4f9440fa3e = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            "attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.",
+            "detectRetina": false,
+            "maxNativeZoom": 18,
+            "maxZoom": 18,
+            "minZoom": 0,
+            "noWrap": false,
+            "opacity": 1,
+            "subdomains": "abc",
+            "tms": false
+        }
+    ).addTo(map_489983e5f0735f15e6ecb999c104a075);
+
+
+    var marker_cluster_6bacf9f28ec46a2a2c19381bd08e6478 = L.markerClusterGroup({});
+    map_489983e5f0735f15e6ecb999c104a075.addLayer(marker_cluster_6bacf9f28ec46a2a2c19381bd08e6478);
+
+
+    var marker_f6e5fc815ba6b9ead0844eaf0006c1c3 = L.marker(
+        [11.358733662779896, 77.8316920366975], {
+            "name": "KSRIET"
+        }
+    ).addTo(map_489983e5f0735f15e6ecb999c104a075);
+
+
+    var popup_3ed6b1c0eac00e9fc2b719e4ffa90620 = L.popup({
+        "maxWidth": "100%"
+    });
+
+
+
+    var html_dfd319cb3376756c72388a6ae80f12cf = $(`<div id="html_dfd319cb3376756c72388a6ae80f12cf" style="width: 100.0%; height: 100.0%;"><a href=/virtual_tour/63d65cf29ec96d5341670569>crce,Fr Conceicao Rodrigues College of Engineering, Kadeshwari Mandir Marg, Land's End, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400050, India</a></div>`)[0];
+    popup_3ed6b1c0eac00e9fc2b719e4ffa90620.setContent(html_dfd319cb3376756c72388a6ae80f12cf);
+
+
+
+    marker_f6e5fc815ba6b9ead0844eaf0006c1c3.bindPopup(popup_3ed6b1c0eac00e9fc2b719e4ffa90620);
+
+
+
+
+    marker_f6e5fc815ba6b9ead0844eaf0006c1c3.bindTooltip(
+        `<div>
+                     Click for virtual tour
+                 </div>`, {
+            "sticky": true
+        }
+    );
+
+
+    var marker_3970e1b89b124d786234b03b3a94f7d6 = L.marker(
+        [19.10756111111111, 72.83730277777778], {
+            "name": "DJSCE"
+        }
+    ).addTo(map_489983e5f0735f15e6ecb999c104a075);
+
+
+    var popup_fa8d0b14a174a109662f458c0f9f0905 = L.popup({
+        "maxWidth": "100%"
+    });
+
+
+
+    var html_e5860d6c0b6dee093e5bb56e5ea00385 = $(`<div id="html_e5860d6c0b6dee093e5bb56e5ea00385" style="width: 100.0%; height: 100.0%;"><a href=/virtual_tour/63d62086eaa2af5e9472704d>DJSCE,Dwarkadas J Sanghvi College of Engineering, Gulmohar Road, Vile Parle West, K/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400058, India</a></div>`)[0];
+    popup_fa8d0b14a174a109662f458c0f9f0905.setContent(html_e5860d6c0b6dee093e5bb56e5ea00385);
+
+
+
+    marker_3970e1b89b124d786234b03b3a94f7d6.bindPopup(popup_fa8d0b14a174a109662f458c0f9f0905);
+
+
+
+
+    marker_3970e1b89b124d786234b03b3a94f7d6.bindTooltip(
+        `<div>
+                     Click for virtual tour
+                 </div>`, {
+            "sticky": true
+        }
+    );
+
+
+    var marker_f7df1be9cfe18ec6808b1f3b1d5247ea = L.marker(
+        [19.02245, 72.85596111111111], {
+            "name": "VJTI"
+        }
+    ).addTo(map_489983e5f0735f15e6ecb999c104a075);
+
+
+    var popup_4d63f11604e3de6c1f61a30554127f3a = L.popup({
+        "maxWidth": "100%"
+    });
+
+
+
+    var html_555e16f0c51b0f67f1b3ee130802f485 = $(`<div id="html_555e16f0c51b0f67f1b3ee130802f485" style="width: 100.0%; height: 100.0%;"><a href=/virtual_tour/63d6224aeaa2af5e9472704e>VJTI,Veermata Jijabhai Technological Institute (VJTI), 501-509, VJTI Marg, Matunga East, F/N Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400031, India</a></div>`)[0];
+    popup_4d63f11604e3de6c1f61a30554127f3a.setContent(html_555e16f0c51b0f67f1b3ee130802f485);
+
+
+
+    marker_f7df1be9cfe18ec6808b1f3b1d5247ea.bindPopup(popup_4d63f11604e3de6c1f61a30554127f3a);
+
+
+
+
+    marker_f7df1be9cfe18ec6808b1f3b1d5247ea.bindTooltip(
+        `<div>
+                     Click for virtual tour
+                 </div>`, {
+            "sticky": true
+        }
+    );
+</script>
+
+</html>

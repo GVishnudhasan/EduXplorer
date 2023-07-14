@@ -1,0 +1,1 @@
+function func() { Calendly.initBadgeWidget({ url: 'https://calendly.com', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }

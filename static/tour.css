@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 40px;
+  }
+  
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .College_name {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading_credits .heading_link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  .Pano{
+    width: 100%;
+    height: 20vh;
+}
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    color: #004aad;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    background-color:#004aad;
+    padding: 1rem;
+
+    /* font-size: 0.9rem; */
+  }
+
+  .card__title{
+    font-weight: 600;
+  }
+
+  .card__link:hover{
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+    height:10em;
+  }
+  
+  .card__title {
+    height:1em;
+    grid-row: 3/4;
+    font-weight: bold;
+    color: #004aad;
+    font-size: x-large;
+  }
+  
+  .card__apply {
+    height:0.1em;
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  
+
+  .College_name{
+    font-size: 3rem;
+    text-transform: capitalize;
+    display: block;
+    color: #004aad;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Cormorant SC', serif;
+    height: 10vh;
+    position: relative;
+    background: transparent;
+  }
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
